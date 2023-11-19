@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fansite.css">
+    <title>Fansite - Accueil</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="images/dt-logo.webp" alt=""></a>
+
+
+    <nav>
+
+        <ul class="main-nav">
+            <li><a href="index.html">Accueil</a></li>
+
+            <li><a href="news.html">News</a></li>
+
+            <li><a href="media.html">Media</a></li>
+
+            <li><a href="realisations.html">Albums</a></li>
+
+            <li><a href="events.html">Concerts</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+    <main>
+
+        <!-- Début de la "boîte" du formulaire -->
+    <div class="contactez-nous">
+
+        <!-- h1 = Titre de la page -->
+        <h1 id="contact">CONTACTEZ-NOUS</h1>
+        <hr>
+        <p></p>
+
+        <!-- Début du formulaire
+            LE FORMULAIRE NE FONCTIONNE PAS :
+            C'est purement visuel. Ignorez la balise "action" indiquée ici. -->
+        <form action="/page-traitement-donnees" method="post">
+
+        <div>
+            <label class="label-form" for="nom">Votre nom</label>
+            <p></p>
+            <input type="text" id="nom" name="nom" placeholder="Martin" required>
+        </div>
+
+        <div>
+            <label class="label-form" for="email">Votre e-mail</label>
+            <p></p>
+            <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+        </div>
+        
+        <div>
+            <label class="label-form" for="sujet">Quel est le sujet de votre message ?</label>
+            <p></p>
+            <select name="sujet" id="sujet" required>
+                <option value="" disabled selected hidden>Sujet...</option>
+                <option value="probleme-compte">J'ai une suggestion pour améliorer le site</option>
+                <option value="question-produit">J'aimerais rédiger du contenu pour le site</option>
+                <option value="suivi-commande">Je souhaiterais signaler une erreur / un problème</option>
+                <option value="autre">Autre</option>
+            </select>
+        </div>
+        
+        <div>
+            <label class="label-form" for="message">Votre message</label>
+            <p></p>
+            <textarea name="message" id="message" placeholder="Bonjour, je vous contacte car..." required></textarea>
+        </div>
+        
+        <div>
+            <!-- CE BOUTON NE FONCTIONNE PAS -->
+            <button type="submit">Envoyer mon message</button>
+            <footer>
+                <hr>
+                
+                        <img id="majesty" src="images/majesty.png" alt="Majesty Logo">
+                    </footer>
+        </div>
+        </form>
+        <!-- Fin du formulaire -->
+
+    </div>
+    <!-- Fin de la "boîte" du formulaire -->
+
+    </main>
+
+</body>
+</html>
