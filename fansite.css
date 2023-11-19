@@ -160,10 +160,6 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#majesty {
-    width: 100px;
-}
-
 .home-grid {
     display: flex;
     flex: 1;
@@ -200,6 +196,16 @@ figure {
 figcaption {
     text-align: center;
     font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+}
+
+footer img {
+    width: 75px;
 }
 
 .source {
